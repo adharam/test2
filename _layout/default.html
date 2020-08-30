@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+  </head>
     {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title }}</h1>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+    </main>
   </body>
 </html>
